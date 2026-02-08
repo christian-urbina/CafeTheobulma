@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CafeTheo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding-top: 3.25rem;
+        }
+
+        .hero.is-origen {
+            background: linear-gradient(rgba(40, 25, 15, .7), rgba(40, 25, 15, .7)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .badge {
+            background-color: #6f4e37;
+            color: white;
+            padding: .3rem .8rem;
+            border-radius: 20px;
+            font-size: .8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar is-white is-fixed-top" role="navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+                <span></span><span></span><span></span>
+            </a>
+        </div>
+
+        <div id="menu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#inicio">Inicio</a>
+                <a class="navbar-item" href="#experiencia">Experiencia</a>
+                <a class="navbar-item" href="#menu-cafe">Menú</a>
+                <a class="navbar-item" href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-origen is-medium" id="inicio">
+        <div class="hero-body has-text-centered">
+             <div class="container">
+                <h1 class="title has-text-white is-2 mt-3">Del cafetal hondureño a tu taza</h1>
+                <p class="subtitle has-text-white">Café 100% hondureño </p>
+                <a class="button is-light is-medium" href="#menu-cafe">
+                    Nuestro menú
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experiencia">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-12-mobile is-6-tablet">
+                    <h2 class="title">Nuestra Experiencia</h2>
+                    <p>
+                        En Café Hondureño Origen Real trabajamos con productores de Marcala, Copán y Santa Bárbara,
+                        apoyando el comercio justo y resaltando la calidad del café hondureño.
+                    </p>
+                </div>
+                <div class="column is-12-mobile is-6-tablet">
+                    <figure class="image is-16by9">
+                        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571" alt="Café artesanal">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-light" id="menu-cafe">
+        <div class="container">
+            <h2 class="title has-text-centered">Menú Hondureño</h2>
+            <div class="columns is-multiline">
+                <div class="column is-12-mobile is-4-tablet">
+                    <div class="box">
+                        <h3 class="title is-5">Café de Marcala</h3>
+                        <p>Aromático, balanceado y de altura.</p>
+                        <p class="has-text-weight-bold mt-2">L 85</p>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-tablet">
+                    <div class="box">
+                        <h3 class="title is-5">Café de Copán</h3>
+                        <p>Sabor intenso con notas achocolatadas.</p>
+                        <p class="has-text-weight-bold mt-2">L 90</p>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-tablet">
+                    <div class="box">
+                        <h3 class="title is-5">Café Santa Bárbara</h3>
+                        <p>Perfil dulce con acidez suave.</p>
+                        <p class="has-text-weight-bold mt-2">L 100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="container has-text-centered">
+            <h2 class="title">Visítanos en Honduras</h2>
+            <p>Orgullosamente cultivado y preparado en Honduras.</p>
+            <a class="button is-dark is-medium mt-3">Ubicación</a>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>© 2026 Café Hondureño Original</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById('menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
